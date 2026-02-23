@@ -1,109 +1,165 @@
 <!DOCTYPE html>
-<html lang="Fr">
-
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Notice Biographie</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: black;
-        }
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-        header {
-            background-color: grey ;
-            color: black;
-            padding: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 30px;
-        }
+.container{
+    display:flex;
+    min-height:100vh;
+}
 
-        header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover ;
-            border: 4px solid gray;
-        }
+/* Partie gauche */
+.left{
+    width:35%;
+    background:gray;
+    color:black;
+    padding:30px;
+}
 
-        section {
-            padding: 20px;
-            margin: 20px;
-            background: grey;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+.left img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    display:block;
+    margin:auto;
+}
 
-        h2 {
-            color: black ;
-        }
+.left h2{
+    margin-top:30px;
+    border-bottom:1px solid white;
+    padding-bottom:5px;
+}
 
-        ul {
-            list-style-type: square;
-        }
+.left p{
+    font-size:14px;
+}
 
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: grey;
-            color: black ;
-        }
-    </style>
+.stars{
+    color:#ffd700;
+}
+
+/* Partie droite */
+.right{
+    width:65%;
+    padding:40px;
+    background:#f4f4f4;
+}
+
+.right h1{
+    font-size:40px;
+    margin-bottom:0;
+}
+
+.right h2{
+    color:#555;
+    border-bottom:2px solid #ccc;
+    padding-bottom:5px;
+}
+
+.section{
+    margin-top:30px;
+}
+
+.job{
+    margin-bottom:20px;
+}
+
+.job h3{
+    margin:5px 0;
+}
+
+.date{
+    float:right;
+    color:#777;
+    font-size:14px;
+}
+
+ul{
+    margin-top:5px;
+}
+</style>
 </head>
 
 <body>
 
-<header>
-    <img src="X.jpg" alt="Photo de profil" class="photo">
-    <div>
-        <h1>FITAHIANJANAHARY Jean Heriman Conné</h1>
-         <p>L1 en DA21</p>
+<div class="container">
+
+    <!-- Partie gauche -->
+    <div class="left">
+        <img src="x.jpg" alt="Photo">
+
+        <h2>Contact</h2>
+        <p><strong>📞</strong>:0334229958</p>
+        <p>✉️:<a href="mailto: hermancone91@gmail.com">hermancone91@gmail.com</a></p>
+        <p><strong>Adresse:</strong>:Manaotsara-Fianaratsoa</p>
+        <p><strong>Fb:</strong><a href="https://www.facebook.com/profile.php?id=61576790669287">Jh Conné Fitahianjanahary</a></p>
+    
+
+        <h2>Compétences</h2>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>Word</p>
+        <p>Exel</p>
+        
     </div>
-</header>
 
-<section>
-    <h2>À propos</h2>
-    <p>Étudiant à l'université de l'Ecole de Management et d'Innovation Technologique dans l'université de Fianarantsoa<strong>(<a href= "https://www.emit.mg">EMIT Fianarantsoa</a>)</strong>, et étudier dans la parcour de <strong>DA2I</strong>(<strong>D</strong>éveloppement d'<strong>A</strong>plication <strong>I</strong>nternet et <strong>I</strong>ntranet)</p>
+    <!-- Partie droite -->
+    <div class="right">
+        <h1>FITAHIANJANAHARY Jean Herimann Conné</h1>
 
-</section>
+        <div class="section">
+            <h2>Formations</h2>
 
-<section>
-    <h2>Formation</h2>
-    <ul>
-        <li>CPE(2018)</li>
-        <li>BEPC(2022)</li>
-      <li>Bacc Laureat(2025)</li>
-           <li>L1 DA2I mention informatique (2026)</li>
-       </ul>
-</section>
+            <div class="Section">
+                <span class="date">2017-2018</span>
+                <h3>CEPE</h3>
+                <p>Au lycée Saint François d'Assise Ambodirano Fianarantsoa</p>
+            </div>
 
-<section>
-    <h2>Compétences</h2>
-    <ul>
-        <li>Microsoft Word et Exel</li>
-        <li>HTML & CSS</li>
-        <li>PowerPoint </li>
-         
-    </ul>
-</section>
+            <div class="section">
+                <span class="date">2021-2022</span>
+                <h3>BEPC</h3>
+                <p>Au lycée FMJ Ranomafana</p>
+            </div>
+        </div>
 
-<section>
-    <h2>Contact</h2>
-    <p>✉️:<a href="mailto: hermancone91@gmail.com">hermancone91@gmail.com</a></p>
-    <p><strong>Fb</strong>:<a href="https://www.facebook.com/profile.php?id=61576790669287">Jh Conné Fitahianjanahary</a></p>
-    <p>📞 :<a href="callto:0334229958"></a>0334229958</a></p>
+
+
+            <div class="Section">
+                <span class="date">2024-2025</span>
+                <h3>BACC</h3>
+                <p>Serie C au<a href="https://www.omcfaa.org/projets/collsfx/"> Lycée Saint François Xavier Ambatomena Fianarantsoa</a></p></div>
+             <div class="Section">
+                 <span class="date">en cours</span>
+                 <h3>LICENCE</h3>
+                 <p>L1 en DA2I de l'<a href="https://www.emit.mg/">EMIT Fianarantsoa </a>(2025-2026)</p>
+             </div>
+            
+                
+            
     
-    
-</section>
+        <div>
+            
+        </div>
+        <div class="section">
+            <h2>Langues</h2>
+            <ul>
+                <li>Malagasy : langue maternelle</li>
+                <li>Anglais : passable</li>
+                <li>Français : assez bien</li>
+            </ul>
+        </div>
 
-<footer>
-    © 2026 FITAHIANJANAHARY Jean Heriman Conné- Tous droits réservés
-</footer>
+    </div>
+</div>
 
 </body>
 </html>
